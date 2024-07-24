@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SplashScreenViewController" customModule="ComfortZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ComfortZone2K24" translatesAutoresizingMaskIntoConstraints="NO" id="7cV-7e-brE">
+                                <rect key="frame" x="16" y="119" width="361" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="oYn-sg-Dfk"/>
+                                    <constraint firstAttribute="height" constant="200" id="sPN-o0-yTd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t30-ec-QYT" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="76.666666666666686" y="618" width="240" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Xgu-JX-Qjx"/>
+                                    <constraint firstAttribute="height" constant="160" id="o7b-dO-6n1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7cV-7e-brE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="3kC-jK-H9y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="t30-ec-QYT" secondAttribute="bottom" constant="40" id="FrP-Lh-4vH"/>
+                            <constraint firstItem="7cV-7e-brE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jWW-SI-7Tp"/>
+                            <constraint firstItem="t30-ec-QYT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="k5K-Wg-h0e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="anmimationView" destination="t30-ec-QYT" id="xxG-2I-zak"/>
+                        <outlet property="logoImageview" destination="7cV-7e-brE" id="bTR-go-hsn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.358778625954194" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ComfortZone2K24" width="1200" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
