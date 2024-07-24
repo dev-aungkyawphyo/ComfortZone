@@ -24,6 +24,9 @@
 		1DD057B02C5196D900AC539B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD057AF2C5196D900AC539B /* Lottie */; };
 		1DD057B22C519A4200AC539B /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD057B12C519A4200AC539B /* LoginScreenViewController.swift */; };
 		1DD057B42C519A4D00AC539B /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD057B32C519A4D00AC539B /* LoginScreen.storyboard */; };
+		1DD057B72C519ED500AC539B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD057B62C519ED500AC539B /* GoogleSignIn */; };
+		1DD057B92C519ED500AC539B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD057B82C519ED500AC539B /* GoogleSignInSwift */; };
+		1DD057BC2C519F0000AC539B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD057BB2C519F0000AC539B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD057BC2C519F0000AC539B /* Kingfisher in Frameworks */,
+				1DD057B92C519ED500AC539B /* GoogleSignInSwift in Frameworks */,
 				1DD057B02C5196D900AC539B /* Lottie in Frameworks */,
+				1DD057B72C519ED500AC539B /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +235,9 @@
 			name = ComfortZone;
 			packageProductDependencies = (
 				1DD057AF2C5196D900AC539B /* Lottie */,
+				1DD057B62C519ED500AC539B /* GoogleSignIn */,
+				1DD057B82C519ED500AC539B /* GoogleSignInSwift */,
+				1DD057BB2C519F0000AC539B /* Kingfisher */,
 			);
 			productName = ComfortZone;
 			productReference = 1DD057792C517F8000AC539B /* ComfortZone.app */;
@@ -260,6 +269,8 @@
 			mainGroup = 1DD057702C517F8000AC539B;
 			packageReferences = (
 				1DD057AE2C5196D900AC539B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1DD057B52C519ED500AC539B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				1DD057BA2C519F0000AC539B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1DD0577A2C517F8000AC539B /* Products */;
 			projectDirPath = "";
@@ -533,6 +544,22 @@
 				minimumVersion = 4.5.0;
 			};
 		};
+		1DD057B52C519ED500AC539B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		1DD057BA2C519F0000AC539B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -540,6 +567,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1DD057AE2C5196D900AC539B /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		1DD057B62C519ED500AC539B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DD057B52C519ED500AC539B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		1DD057B82C519ED500AC539B /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DD057B52C519ED500AC539B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		1DD057BB2C519F0000AC539B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DD057BA2C519F0000AC539B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
