@@ -42,7 +42,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="anmimationView" destination="t30-ec-QYT" id="xxG-2I-zak"/>
+                        <outlet property="animationView" destination="t30-ec-QYT" id="rb1-U9-2K2"/>
                         <outlet property="logoImageview" destination="7cV-7e-brE" id="bTR-go-hsn"/>
                     </connections>
                 </viewController>

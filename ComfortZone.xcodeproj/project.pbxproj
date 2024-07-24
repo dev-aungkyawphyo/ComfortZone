@@ -22,6 +22,8 @@
 		1DD057AB2C5194A500AC539B /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD057AA2C5194A500AC539B /* SplashScreenViewController.swift */; };
 		1DD057AD2C5194B100AC539B /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD057AC2C5194B100AC539B /* SplashScreen.storyboard */; };
 		1DD057B02C5196D900AC539B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD057AF2C5196D900AC539B /* Lottie */; };
+		1DD057B22C519A4200AC539B /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD057B12C519A4200AC539B /* LoginScreenViewController.swift */; };
+		1DD057B42C519A4D00AC539B /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD057B32C519A4D00AC539B /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		1DD057A82C51822100AC539B /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		1DD057AA2C5194A500AC539B /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		1DD057AC2C5194B100AC539B /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		1DD057B12C519A4200AC539B /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		1DD057B32C519A4D00AC539B /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,8 @@
 		1DD057A22C51817200AC539B /* LoginScreenModule */ = {
 			isa = PBXGroup;
 			children = (
+				1DD057B12C519A4200AC539B /* LoginScreenViewController.swift */,
+				1DD057B32C519A4D00AC539B /* LoginScreen.storyboard */,
 			);
 			path = LoginScreenModule;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD057A52C5181CC00AC539B /* ComfortZoneLoading.json in Resources */,
+				1DD057B42C519A4D00AC539B /* LoginScreen.storyboard in Resources */,
 				1DD057AD2C5194B100AC539B /* SplashScreen.storyboard in Resources */,
 				1DD057862C517F8200AC539B /* Assets.xcassets in Resources */,
 				1DD057972C5180EF00AC539B /* Colors.xcassets in Resources */,
@@ -287,6 +294,7 @@
 			files = (
 				1DD0579B2C51812900AC539B /* Constants.swift in Sources */,
 				1DD0579D2C51813200AC539B /* Extensions.swift in Sources */,
+				1DD057B22C519A4200AC539B /* LoginScreenViewController.swift in Sources */,
 				1DD057AB2C5194A500AC539B /* SplashScreenViewController.swift in Sources */,
 				1DD057992C51811F00AC539B /* AllProductEntity.swift in Sources */,
 				1DD057812C517F8000AC539B /* HomeScreenViewController.swift in Sources */,
