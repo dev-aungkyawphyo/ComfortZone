@@ -103,8 +103,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                     <color key="baseForegroundColor" name="TertiaryTextColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotPasswordBtnAction:" destination="PpG-1I-OTj" eventType="touchUpInside" id="YwW-wx-xsX"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-Bw-zlo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-Bw-zlo" customClass="CustomButton" customModule="ComfortZone" customModuleProvider="target">
                                 <rect key="frame" x="20" y="506.33333333333326" width="353" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="0yj-JG-uNk"/>
@@ -115,6 +118,9 @@
                                     <color key="baseForegroundColor" name="BtnTextColor"/>
                                     <color key="baseBackgroundColor" name="PrimaryColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginBtnAction:" destination="PpG-1I-OTj" eventType="touchUpInside" id="hn5-NR-cId"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Continue With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-pI-Ksn">
                                 <rect key="frame" x="127.33333333333333" y="591.33333333333337" width="138.66666666666669" height="21.666666666666629"/>
@@ -135,6 +141,9 @@
                                         <buttonConfiguration key="configuration" style="filled" image="google">
                                             <color key="baseBackgroundColor" name="CellBGColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="googleBtnAction:" destination="PpG-1I-OTj" eventType="touchUpInside" id="Rb4-eH-9cJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGt-z1-p1E">
                                         <rect key="frame" x="79.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
@@ -142,6 +151,9 @@
                                         <buttonConfiguration key="configuration" style="filled" image="facebook">
                                             <color key="baseBackgroundColor" name="CellBGColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="facebookBtnAction:" destination="PpG-1I-OTj" eventType="touchUpInside" id="70s-tN-30e"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -164,6 +176,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                             <color key="baseForegroundColor" name="PrimaryColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="registerBtnAction:" destination="PpG-1I-OTj" eventType="touchUpInside" id="Rcd-Nw-bUr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
