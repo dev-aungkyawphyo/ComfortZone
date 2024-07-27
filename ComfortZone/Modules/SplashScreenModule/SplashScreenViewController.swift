@@ -25,7 +25,7 @@ class SplashScreenViewController: UIViewController {
         Timer.scheduledTimer(timeInterval: 7.5, target: self, selector: #selector(routerSetup), userInfo: nil, repeats: false)
     }
     
-    @objc func routerSetup() {
+    @objc private func routerSetup() {
         guard let viewController = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateViewController(identifier: "LoginScreenViewController") as? LoginScreenViewController else {return}
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let sceneDelegate = windowScene.delegate as? SceneDelegate,

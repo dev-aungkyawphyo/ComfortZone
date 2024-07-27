@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1AE2472C541FEF003DFB95 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AE2462C541FEF003DFB95 /* LoginScreenProtocols.swift */; };
+		1D1AE2492C54201E003DFB95 /* LoginScreenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AE2482C54201E003DFB95 /* LoginScreenEntity.swift */; };
+		1D1AE24C2C542DF8003DFB95 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AE24B2C542DF8003DFB95 /* CustomButton.swift */; };
+		1D1AE24E2C542EA7003DFB95 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AE24D2C542EA7003DFB95 /* RoundedButton.swift */; };
 		1DD0577D2C517F8000AC539B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0577C2C517F8000AC539B /* AppDelegate.swift */; };
 		1DD0577F2C517F8000AC539B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0577E2C517F8000AC539B /* SceneDelegate.swift */; };
 		1DD057812C517F8000AC539B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD057802C517F8000AC539B /* HomeScreenViewController.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D1AE2462C541FEF003DFB95 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
+		1D1AE2482C54201E003DFB95 /* LoginScreenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenEntity.swift; sourceTree = "<group>"; };
+		1D1AE24B2C542DF8003DFB95 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1D1AE24D2C542EA7003DFB95 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		1DD057792C517F8000AC539B /* ComfortZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComfortZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD0577C2C517F8000AC539B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD0577E2C517F8000AC539B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				1DD057902C51802D00AC539B /* Applicaiton */,
-				1DD057A62C5181EB00AC539B /* DesignableUI */,
 				1DD057922C51806000AC539B /* Modules */,
 				1DD057932C51807000AC539B /* UIComponents */,
 				1DD057942C51808E00AC539B /* Helper */,
@@ -132,6 +139,7 @@
 			children = (
 				1DD0579E2C51813A00AC539B /* TableViewCells */,
 				1DD0579F2C51814800AC539B /* CollectionViewCells */,
+				1DD057A72C5181FF00AC539B /* DesignableUI */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -171,8 +179,8 @@
 		1DD057A02C51815900AC539B /* SplashScreenModule */ = {
 			isa = PBXGroup;
 			children = (
-				1DD057AA2C5194A500AC539B /* SplashScreenViewController.swift */,
 				1DD057AC2C5194B100AC539B /* SplashScreen.storyboard */,
+				1DD057AA2C5194A500AC539B /* SplashScreenViewController.swift */,
 			);
 			path = SplashScreenModule;
 			sourceTree = "<group>";
@@ -187,8 +195,10 @@
 		1DD057A22C51817200AC539B /* LoginScreenModule */ = {
 			isa = PBXGroup;
 			children = (
-				1DD057B12C519A4200AC539B /* LoginScreenViewController.swift */,
 				1DD057B32C519A4D00AC539B /* LoginScreen.storyboard */,
+				1DD057B12C519A4200AC539B /* LoginScreenViewController.swift */,
+				1D1AE2462C541FEF003DFB95 /* LoginScreenProtocols.swift */,
+				1D1AE2482C54201E003DFB95 /* LoginScreenEntity.swift */,
 			);
 			path = LoginScreenModule;
 			sourceTree = "<group>";
@@ -201,20 +211,14 @@
 			path = SupportingFile;
 			sourceTree = "<group>";
 		};
-		1DD057A62C5181EB00AC539B /* DesignableUI */ = {
+		1DD057A72C5181FF00AC539B /* DesignableUI */ = {
 			isa = PBXGroup;
 			children = (
-				1DD057A72C5181FF00AC539B /* DesignableView */,
-			);
-			path = DesignableUI;
-			sourceTree = "<group>";
-		};
-		1DD057A72C5181FF00AC539B /* DesignableView */ = {
-			isa = PBXGroup;
-			children = (
+				1D1AE24B2C542DF8003DFB95 /* CustomButton.swift */,
+				1D1AE24D2C542EA7003DFB95 /* RoundedButton.swift */,
 				1DD057A82C51822100AC539B /* DesignableView.swift */,
 			);
-			path = DesignableView;
+			path = DesignableUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,14 +308,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD0579B2C51812900AC539B /* Constants.swift in Sources */,
+				1D1AE2492C54201E003DFB95 /* LoginScreenEntity.swift in Sources */,
 				1DD0579D2C51813200AC539B /* Extensions.swift in Sources */,
 				1DD057B22C519A4200AC539B /* LoginScreenViewController.swift in Sources */,
 				1DD057AB2C5194A500AC539B /* SplashScreenViewController.swift in Sources */,
 				1DD057992C51811F00AC539B /* AllProductEntity.swift in Sources */,
+				1D1AE2472C541FEF003DFB95 /* LoginScreenProtocols.swift in Sources */,
 				1DD057812C517F8000AC539B /* HomeScreenViewController.swift in Sources */,
+				1D1AE24C2C542DF8003DFB95 /* CustomButton.swift in Sources */,
 				1DD057A92C51822100AC539B /* DesignableView.swift in Sources */,
 				1DD0577D2C517F8000AC539B /* AppDelegate.swift in Sources */,
 				1DD0577F2C517F8000AC539B /* SceneDelegate.swift in Sources */,
+				1D1AE24E2C542EA7003DFB95 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
